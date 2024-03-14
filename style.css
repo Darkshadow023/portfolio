@@ -325,11 +325,12 @@ a.nav-link{
 	align-items: center;
 	justify-content: center;
 	color: var(--main-fonts-color);
+	font-size: 20px;
 }   
 #portfolio p,
 #contact p{
 	text-align:center;
-	font-size:1rem;
+
 	font-family: var(--main-font-family);
 	padding: 1rem;
 }
@@ -379,14 +380,13 @@ footer {
 
 .copyright {
 	color: #fff;
-	font-size: 1.2rem;
+	font-size: 15px;
 	line-height: 40px;
 	text-align: center;
 }
 
 .copyright a{
 	color: #fff;
-	font-size: 1rem;
 	letter-spacing: 1px;
     text-decoration: none;
 }
