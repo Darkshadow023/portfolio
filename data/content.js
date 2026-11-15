@@ -4,7 +4,7 @@ export const site = {
   // TODO: replace with your real domain once the site is deployed
   // (for example the URL Vercel gives you). It is used for the sitemap,
   // robots.txt and the Open Graph tags.
-  url: "https://example.com",
+  url: "https://adityakapoor.vercel.app/",
   title: "Aditya Kapoor | Cyber Security Student",
   description:
     "Portfolio of Aditya Kapoor, a second-year Bachelor of Cyber Security student at Deakin University and Vice President of the Deakin University Cybersecurity Association (DUCA).",
