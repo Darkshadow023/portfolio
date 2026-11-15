@@ -7,28 +7,34 @@ import styles from "./About.module.css";
 export default function About() {
   const { photo } = profile;
 
+  const image = (className) => (
+    <Image
+      src={photo.src}
+      alt={photo.alt}
+      width={photo.width}
+      height={photo.height}
+      sizes="(max-width: 900px) 140px, 320px"
+      className={className}
+      // SVG placeholders are served as they are; real photos get optimised.
+      unoptimized={photo.src.endsWith(".svg")}
+    />
+  );
+
   return (
     <Section id="about" label="About" heading={about.heading}>
       <div className={styles.layout}>
+        <div className={styles.mobilePhoto}>{image(styles.photo)}</div>
+
         <Reveal className={styles.text}>
           {about.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
         </Reveal>
 
-        <Reveal as="figure" className={styles.figure} delay={120}>
+        <Reveal as="figure" className={`${styles.figure} ${styles.desktopPhoto}`} delay={120}>
           {/* TODO: replace the placeholder with a real photo. Change
               profile.photo in data/content.js (see the README). */}
-          <Image
-            src={photo.src}
-            alt={photo.alt}
-            width={photo.width}
-            height={photo.height}
-            sizes="(max-width: 900px) 240px, 320px"
-            className={styles.photo}
-            // SVG placeholders are served as they are; real photos get optimised.
-            unoptimized={photo.src.endsWith(".svg")}
-          />
+          {image(styles.photo)}
           {photo.isPlaceholder ? (
             <figcaption className={styles.caption}>
               Photo placeholder

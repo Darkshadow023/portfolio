@@ -22,6 +22,10 @@
   max-width: 320px;
 }
 
+.mobilePhoto {
+  display: none;
+}
+
 .photo {
   width: 100%;
   height: auto;
@@ -46,8 +50,18 @@
     gap: var(--space-6);
   }
 
-  .figure {
-    justify-self: start;
-    max-width: 240px;
+  .desktopPhoto {
+    display: none;
+  }
+
+  .mobilePhoto {
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+  }
+
+  .mobilePhoto .photo {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
   }
 }
