@@ -52,7 +52,7 @@ export const education = [
     qualification: "Bachelor of Cyber Security",
     institution: "Deakin University",
     location: "Burwood, VIC",
-    dates: "Mar 2025 - Sep 2027 (expected)",
+    dates: "Feb 2025 - Feb 2027 (expected)",
     result: { label: "WAM", value: "81.5", note: "High Distinction average" },
     units: [
       { code: "SIT325", name: "Advanced Network Security" },
@@ -65,7 +65,7 @@ export const education = [
     qualification: "Year 12 (Senior Secondary)",
     institution: "Apeejay School",
     location: "Noida, India",
-    dates: "2024",
+    dates: "Apr 2010 - Mar 2024",
     result: { label: "Result", value: "85%", note: "" },
     units: [],
   },
