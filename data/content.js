@@ -5,7 +5,7 @@ export const site = {
   // (for example the URL Vercel gives you). It is used for the sitemap,
   // robots.txt and the Open Graph tags.
   url: "https://adityakapoor.vercel.app/",
-  title: "Aditya Kapoor | Cyber Security Student",
+  title: "Aditya Kapoor Portfolio",
   description:
     "Portfolio of Aditya Kapoor, a second-year Bachelor of Cyber Security student at Deakin University and Vice President of the Deakin University Cybersecurity Association (DUCA).",
 };
@@ -231,7 +231,6 @@ export const contact = {
 export const navigation = [
   { id: "about", label: "About" },
   { id: "education", label: "Education" },
-  { id: "work", label: "Work" },
   { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
   { id: "awards", label: "Awards" },
