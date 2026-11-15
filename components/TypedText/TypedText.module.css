@@ -1,0 +1,53 @@
+.wrapper {
+  position: relative;
+}
+
+/* With JavaScript on, keep the text hidden until the typing effect has taken
+   over, so the full line does not flash before it is typed. */
+:global(html[data-js]) .visual:not([data-ready]) {
+  visibility: hidden;
+}
+
+.rest {
+  visibility: hidden;
+}
+
+/* A zero-width box, so the cursor never pushes the text around. */
+.cursor {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 1.1em;
+  vertical-align: text-bottom;
+}
+
+.cursor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 0.55em;
+  height: 100%;
+  background: var(--color-accent);
+}
+
+.cursorIdle::after {
+  animation: blink 1.1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursorIdle::after {
+    animation: none;
+  }
+}

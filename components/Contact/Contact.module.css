@@ -1,0 +1,109 @@
+.section {
+  padding-block: calc(var(--section-gap) / 2) var(--section-gap);
+}
+
+.panel {
+  padding: clamp(1.5rem, 0.75rem + 4vw, 4rem);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.marker {
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent);
+  flex: none;
+}
+
+.heading {
+  font-size: clamp(2rem, 1.4rem + 3vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.text {
+  margin-top: var(--space-4);
+  max-width: 38rem;
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+}
+
+.email {
+  display: inline-block;
+  margin-top: var(--space-6);
+  font-size: clamp(1.0625rem, 0.75rem + 1.7vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  overflow-wrap: anywhere;
+  transition: color var(--duration-fast) ease;
+}
+
+.email:hover {
+  color: var(--color-accent-strong);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  min-width: 15rem;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition:
+    border-color var(--duration-fast) ease,
+    background-color var(--duration-fast) ease;
+}
+
+.link:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
+.linkLabel {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.linkHandle {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .links {
+    flex-direction: column;
+  }
+
+  .link {
+    min-width: 0;
+  }
+}

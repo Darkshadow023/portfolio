@@ -1,0 +1,44 @@
+.section {
+  padding-block: calc(var(--section-gap) / 2);
+}
+
+.header {
+  margin-bottom: var(--space-7);
+  max-width: 44rem;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.marker {
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent);
+  flex: none;
+}
+
+.heading {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.intro {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 600px) {
+  .header {
+    margin-bottom: var(--space-6);
+  }
+}

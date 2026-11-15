@@ -1,0 +1,49 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition:
+    color var(--duration-fast) ease,
+    border-color var(--duration-fast) ease,
+    background-color var(--duration-fast) ease;
+}
+
+.toggle:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
+/* In the dark theme show the sun (click for light), and the other way round. */
+.moon {
+  display: none;
+}
+
+:global(html[data-theme="light"]) .sun {
+  display: none;
+}
+
+:global(html[data-theme="light"]) .moon {
+  display: block;
+}
+
+@media (prefers-color-scheme: light) {
+  :global(html:not([data-theme])) .sun {
+    display: none;
+  }
+
+  :global(html:not([data-theme])) .moon {
+    display: block;
+  }
+}
+
+/* Without JavaScript the button cannot do anything, so hide it. */
+:global(html:not([data-js])) .toggle {
+  display: none;
+}

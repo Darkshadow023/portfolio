@@ -1,0 +1,22 @@
+/* The hidden state only applies when JavaScript is running (data-js is set by
+   the inline script in app/layout.js), so content is never stuck invisible. */
+:global(html[data-js]) .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity var(--duration-slow) var(--ease-out),
+    transform var(--duration-slow) var(--ease-out);
+}
+
+:global(html[data-js]) .reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(html[data-js]) .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
