@@ -1,5 +1,4 @@
-<img src="assets/icon.svg" width="64" height="64" alt="">
+# Aditya Kapoor - Portfolio
 
-# newer web
-
-Created in [T3 Code](https://t3.codes).
+My personal portfolio site. A single statically rendered page built with
+Next.js CSS. 

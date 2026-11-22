@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js build output and generated files
+.next/
+out/
+build/
+dist/
+next-env.d.ts
+*.tsbuildinfo
+
+# Environment variables (keep a committed .env.example if you add one)
+.env
+.env.*
+!.env.example
+
+# Logs and debug output
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Testing and coverage
+coverage/
+.nyc_output/
+lighthouse-*.json
+lighthouse-*.html
+
+# Deployment tooling
+.vercel/
+
+# Editors and IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local scratch and temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Certificates and keys
+*.pem
+
+# Planning documents and the blog post template (kept locally, not committed)
+creative-brief.md
+information-architecture.md
+content/blog/_template.md
