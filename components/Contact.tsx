@@ -1,4 +1,4 @@
-import { CV_PATH, EMAIL, GITHUB_URL, LINKEDIN_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
+import { CV_PATH, EMAIL, GITHUB_URL, LINKEDIN_URL } from "@/lib/site";
 import Reveal from "./Reveal";
 
 const external = (
@@ -22,10 +22,6 @@ export default function Contact() {
       </Reveal>
 
       <Reveal as="ul" className="contact__list">
-        <li>
-          <span className="mono">Phone</span>
-          <a href={PHONE_HREF}>{PHONE_DISPLAY}</a>
-        </li>
         <li>
           <span className="mono">Location</span>
           <span>Melbourne, VIC 3125</span>

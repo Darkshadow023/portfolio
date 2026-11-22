@@ -6,8 +6,6 @@ export const DESCRIPTION =
 export const OG_DESCRIPTION =
   "Third-year Cyber Security student at Deakin University. I lead a 40+ person security club and mentored 500+ people at CodeDay.";
 export const EMAIL = "kapooraditya231@gmail.com";
-export const PHONE_DISPLAY = "+61 489 186 484";
-export const PHONE_HREF = "tel:+61489186484";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/adityakapoor23";
 export const CV_PATH = "/Aditya-Kapoor-CV.pdf";
 export const GITHUB_URL = "https://github.com/Darkshadow023";
