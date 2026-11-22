@@ -95,6 +95,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a className="skip" href="#main">
           Skip to content
         </a>
+        {/* Real top-of-page anchor: the fixed header can't be a scroll target, so "Back to top" points here. */}
+        <div id="top" />
         <Header />
         <main id="main">{children}</main>
         <Footer />

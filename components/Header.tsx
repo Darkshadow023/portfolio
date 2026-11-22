@@ -86,7 +86,7 @@ export default function Header() {
   }, [onHome]);
 
   return (
-    <header className="site-header" id="top">
+    <header className="site-header">
       <div className="wrap header-row">
         <Link className="brand" href="/" aria-label="AK, Aditya Kapoor, home">
           AK<span aria-hidden="true">.</span>
