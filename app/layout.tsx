@@ -74,7 +74,7 @@ const jsonLd = {
   image: `${SITE_URL}/assets/og.png`,
   jobTitle: "Cyber Security student",
   email: `mailto:${EMAIL}`,
-  address: { "@type": "PostalAddress", addressLocality: "Burwood", addressRegion: "VIC", addressCountry: "AU" },
+  address: { "@type": "PostalAddress", addressLocality: "Melbourne", addressRegion: "VIC", addressCountry: "AU" },
   affiliation: [
     { "@type": "CollegeOrUniversity", name: "Deakin University" },
     { "@type": "Organization", name: "Deakin University Cybersecurity Association (DUCA)" },
