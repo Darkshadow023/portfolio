@@ -28,7 +28,7 @@ export default function Contact() {
         </li>
         <li>
           <span className="mono">Location</span>
-          <span>Burwood, VIC 3125</span>
+          <span>Melbourne, VIC 3125</span>
         </li>
         <li>
           <span className="mono">LinkedIn</span>
